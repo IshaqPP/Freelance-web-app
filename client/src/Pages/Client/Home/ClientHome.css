@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Give the navbar a little bit of breathing room */
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* Add some margin to the top of the cards */
+.card {
+    margin-top: 20px;
+}
+
+/* Make the cards full width on small screens */
+@media screen and (max-width: 575px) {
+    .col {
+        width: 100%;
+    }
+}
+
+/* Style the cards */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+}
+
+/* Add some padding to the top and bottom of the container */
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Add a background color to the container */
+.container-fluid {
+    background-color: #f8f9fa;
+}
